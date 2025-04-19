@@ -1,0 +1,39 @@
+.catalogue-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 24px;
+  }
+  
+  .catalogue-container h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #6a1b9a;
+    margin-bottom: 24px;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .product-card {
+    width: 220px;
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+  
+  .product-card h3 {
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .product-card p {
+    color: #555;
+  }
+  

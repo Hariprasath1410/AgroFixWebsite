@@ -1,0 +1,37 @@
+.track-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .track-container h2 {
+    margin-bottom: 16px;
+    font-size: 22px;
+    color: #2e7d32;
+  }
+  
+  .track-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .track-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .track-container button:hover {
+    background-color: #1b5e20;
+  }
+  
