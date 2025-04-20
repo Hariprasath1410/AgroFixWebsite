@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+AgroFix Project AgroFix is a full-stack web application designed to bridge the gap between farmers and agricultural experts. The system features a Frontend built with React.js and a Backend powered by Node.js, Express.js, and MySQL. This project ensures seamless communication, data storage, and role-based access.
+Features AgroFix-Frontend: • Role-Based Dashboards: o Admin Dashboard with product management features. o User Dashboard for general access and features. • Routing: Navigation between pages using react-router-dom. • State Management: Efficient handling of application state using Context APIs. • Responsive Design: Mobile-friendly layout and UI components. AgroFix-Backend: • REST API: Backend provides endpoints for managing products, users, and admin operations. • MySQL Database: Secure and efficient data storage. • Authentication: Token-based authentication using JWT (future improvement). • Error Handling: Comprehensive error handling for smoother user experience.
+Tech Stack Frontend: React.js, HTML5, CSS3, JavaScript, Axios Backend: Node.js, Express.js, MySQL Database: MySQL Version Control: Git
+Frontend Setup
+Navigate to the Frontend Folder: bash Copy code cd agrofix-frontend
+Start the Development Server: bash Copy code npm start
+Environment Variables: Create a .env file in the frontend directory and include the backend URL: arduino Copy code REACT_APP_BACKEND_URL=http://localhost:5000
+Backend Setup
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Navigate to the Backend Folder: bash Copy code cd agrofix-backend
+Configure Environment Variables: Create a .env file in the backend directory and add the following: makefile Copy code DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=
+DB_NAME=agrofix
+JWT_SECRET=
+PORT=5000
+Start the Backend Server: bash Copy code npm start
+API Endpoints: o GET /products: Fetch all products. o POST /products: Add a new product (Admin only). o DELETE /products/:id: Delete a product (Admin only).
+Functionality
 
-## Available Scripts
+Admin Dashboard View, add, update, and delete products. Manage users and assign roles. Access advanced analytics (future scope).
 
-In the project directory, you can run:
+User Dashboard Browse available products or services. View detailed product information. Interact with features like searching and filtering (future scope).
 
-### `npm start`
+Product Management Products can be dynamically created, updated, or removed by Admins. Product details include name, price, and description.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Role-Based Access Admin: Full access to manage all resources (e.g., products and users). User: Restricted access to general functionalities only.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Routing Seamless navigation between pages using React Router. Protected routes to ensure only authorized users access specific pages.
 
-### `npm test`
+MySQL Database Integration Persistent storage for products and user information. Secure and efficient data retrieval.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+API Integration Fetch product and user data from the backend. Perform CRUD operations for products via RESTful API.
 
-### `npm run build`
+Responsive Design User-friendly interface optimized for both desktop and mobile devices.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Error Handling Displays appropriate error messages for failed actions or API calls. Retry functionality for critical operations.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Future Enhancements (Planned) User authentication and session management using JWT. Advanced search, filter, and recommendation systems. Dashboard analytics for admin users.
